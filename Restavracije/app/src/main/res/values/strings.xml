@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Restavracije</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list_restavracij">Restavracije</string>
+    <string name="title_activity_activity_restavracije">ActivityRestavracije</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_activity_dodaj">ActivityDodaj</string>
+</resources>

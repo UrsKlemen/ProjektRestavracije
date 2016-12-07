@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.klemen.restavracije.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Restavracija po izbiri"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"/>
+
+    <Button
+        android:background="@drawable/button_do"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Najdi restavracije"
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/group1"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edText"
+        android:layout_below="@+id/group"
+        android:layout_marginTop="10sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10sp"
+        android:id="@+id/group">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uporabi mesto trenutne lokacije"
+            android:id="@+id/radioButton"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="10sp"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:onClick="openLocation"
+            android:buttonTint="@color/orange"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vpisi mesto lokacije"
+            android:id="@+id/radioButton2"
+            android:layout_below="@+id/radioButton"
+            android:layout_marginTop="2sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="openLocation"
+            android:buttonTint="@color/orange"/>
+    </RadioGroup>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edText"
+        android:layout_marginTop="10sp"
+        android:id="@+id/group1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vse restavracije"
+            android:id="@+id/radioButton3"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="10sp"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:onClick="radioKategorij"
+            android:buttonTint="@color/orange"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restavracije z brez laktoznimi izdelki"
+            android:id="@+id/radioButton4"
+            android:layout_below="@+id/radioButton"
+            android:layout_marginTop="2sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="radioKategorij"
+            android:buttonTint="@color/orange"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restavracije z brez glutenskimi izdelki"
+            android:id="@+id/radioButton5"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="2sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="radioKategorij"
+            android:buttonTint="@color/orange"/>
+    </RadioGroup>
+</RelativeLayout>

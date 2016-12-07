@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.klemen.restavracije.ActivityDodaj"
+    tools:showIn="@layout/activity_activity_dodaj">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Dodaj novo restavracijo"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/naslov"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skeniraj"
+        android:id="@+id/skeniraj"
+        android:background="@drawable/button_do"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/naslov"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/skeniraj"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView6"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop= "2sp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:id="@+id/buttonDodaj"
+        android:layout_below="@id/textView6"
+        android:background="@drawable/button_do"
+        android:textColor="@color/white"
+        android:onClick="addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"/>
+
+</RelativeLayout>
