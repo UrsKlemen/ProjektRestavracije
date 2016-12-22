@@ -20,7 +20,6 @@ public class ActivityDodaj extends AppCompatActivity implements OnClickListener 
     private Button scanBtn;
     private TextView formatTxt, contentTxt;
     ApplicationMy all;
-    DodajObiskane aa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

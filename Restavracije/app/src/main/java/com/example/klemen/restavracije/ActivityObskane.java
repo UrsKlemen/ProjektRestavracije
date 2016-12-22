@@ -1,6 +1,7 @@
 package com.example.klemen.restavracije;
 
 import android.content.Intent;
+import android.database.DefaultDatabaseErrorHandler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +13,7 @@ public class ActivityObskane extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private LinearLayoutManager mLayoutManager;
-    DodajObiskane app;
+    ApplicationMy obiskane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,10 @@ public class ActivityObskane extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        app = (DodajObiskane) getApplication();
+        obiskane = (ApplicationMy) getApplication();
         mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mAdapter = new AdapterRestavracij(app.getByMesto("Maribor","vse"), this);
+        mAdapter = new AdapterRestavracij(obiskane.getByMesto("Maribor","vse"), this);
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mLayoutManager);

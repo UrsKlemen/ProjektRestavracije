@@ -32,7 +32,7 @@ public class AdapterRestavracij extends RecyclerView.Adapter<AdapterRestavracij.
     public static final String PARAMETER_POSITION_1 = "POSITION_RESTAVRACIJ";
     private MyClass mDataset;
     Activity ac;
-    DodajObiskane obiskane;
+    //Obiskane obiskane;
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         // each data item is just a string in this case
