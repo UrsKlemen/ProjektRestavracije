@@ -5,4 +5,28 @@
     <string name="title_activity_activity_restavracije">ActivityRestavracije</string>
     <string name="title_activity_location">LocationActivity</string>
     <string name="title_activity_activity_dodaj">ActivityDodaj</string>
+    <string-array name="array_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="array_hrana">
+        <item>zar</item>
+        <item>testenine</item>
+        <item>morskaHrana</item>
+        <item>pizze</item>
+    </string-array>
+    <string-array name="array_pos">
+        <item>brez</item>
+        <item>brezLaktozni</item>
+        <item>brezGlutenski</item>
+        <item>brezLaktozni/Glutenski</item>
+    </string-array>
+    <string-array name="array_cena">
+        <item>poceni</item>
+        <item>srednje</item>
+        <item>drago</item>
+    </string-array>
 </resources>
