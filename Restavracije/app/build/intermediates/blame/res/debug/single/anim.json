@@ -1,11 +1,19 @@
 [
     {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_move1.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\anim\\anim_move1.xml"
+    },
+    {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha2\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha2\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_move.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\anim\\anim_move.xml"
     },
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
@@ -22,6 +30,14 @@
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha2\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_kroznik.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\anim\\anim_kroznik.xml"
+    },
+    {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_food.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\anim\\anim_food.xml"
     },
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
@@ -42,6 +58,10 @@
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha2\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_text.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\anim\\anim_text.xml"
     },
     {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",

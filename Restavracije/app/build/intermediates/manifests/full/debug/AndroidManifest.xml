@@ -28,11 +28,6 @@
             android:name="com.example.klemen.restavracije.ListRestavracij"
             android:label="@string/title_activity_list_restavracij"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.klemen.restavracije.ActivityRestavracije"
@@ -45,7 +40,13 @@
         <activity
             android:name="com.example.klemen.restavracije.ActivityObskane"
             android:label="Obiskane restavracije"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.klemen.restavracije.ActivityAnimation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

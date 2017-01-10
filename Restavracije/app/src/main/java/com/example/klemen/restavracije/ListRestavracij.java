@@ -59,7 +59,7 @@ public class ListRestavracij extends AppCompatActivity {
         }
 
         LocationManager locationManager=(LocationManager)getSystemService(LOCATION_SERVICE);
-        /*Criteria criteria=new Criteria();
+        Criteria criteria=new Criteria();
         Location location=locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria,true));
         Geocoder gcd=new Geocoder(getBaseContext(), Locale.getDefault());
         List<Address> addresses = null;
@@ -71,7 +71,7 @@ public class ListRestavracij extends AppCompatActivity {
             }
         }catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
 
         Intent intent = getIntent();
         message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
@@ -84,7 +84,7 @@ public class ListRestavracij extends AppCompatActivity {
         app = (ApplicationMy) getApplication();
         mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mAdapter = new AdapterRestavracij(app.getByMesto("Maribor",kategorija), this);
+        mAdapter = new AdapterRestavracij(app.getByMesto(message,kategorija), this);
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mLayoutManager);
