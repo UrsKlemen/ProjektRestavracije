@@ -26,7 +26,7 @@ public class ActivityObskane extends AppCompatActivity {
         obiskane = (ApplicationMy) getApplication();
         mLayoutManager = new LinearLayoutManager(this);
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mAdapter = new AdapterRestavracij(obiskane.getByMesto("Maribor","vse"), this);
+        mAdapter = new AdapterObiskanih(obiskane.getAll(), this);
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mLayoutManager);

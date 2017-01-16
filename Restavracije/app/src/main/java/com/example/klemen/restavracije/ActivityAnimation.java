@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class ActivityAnimation extends AppCompatActivity implements Animation.An
     Animation animacija3;
     Animation animacija4;
     Animation animacija5;
+    WebView wv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,9 +30,10 @@ public class ActivityAnimation extends AppCompatActivity implements Animation.An
         final ImageView vilica = (ImageView)findViewById(R.id.imageVilica);
         final ImageView noz = (ImageView)findViewById(R.id.imageNoz);
         final ImageView steak = (ImageView)findViewById(R.id.imageView3);
-        final ImageView mapa = (ImageView)findViewById(R.id.imageView2);
         final TextView napis1 = (TextView)findViewById(R.id.textView);
         final TextView napis2 = (TextView)findViewById(R.id.textView2);
+        wv = (WebView)findViewById(R.id.webView);
+        wv.loadUrl("file:///android_asset/rest.html");
         napis1.setVisibility(View.INVISIBLE);
         napis2.setVisibility(View.INVISIBLE);
         kroznik.setVisibility(View.INVISIBLE);
@@ -84,18 +87,18 @@ public class ActivityAnimation extends AppCompatActivity implements Animation.An
                             public void run() {
                                 noz.setAnimation(animacija4);
                                 vilica.setAnimation(animacija5);
-                                mapa.setVisibility(View.INVISIBLE);
+                                wv.setVisibility(View.INVISIBLE);
                                 napis1.setVisibility(View.VISIBLE);
                                 napis1.startAnimation(animacija2);
                                 napis2.setVisibility(View.VISIBLE);
                                 napis2.startAnimation(animacija2);
                             }
-                        }, 4000);
+                        }, 2000);
                     }
                 }, 500);
 
             }
-        }, 1500);
+        }, 1000);
     }
 
     @Override

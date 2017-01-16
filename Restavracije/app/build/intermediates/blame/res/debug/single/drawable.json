@@ -44,6 +44,10 @@
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha2\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\customborder.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\drawable\\customborder.xml"
+    },
+    {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_do.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\drawable\\button_do.xml"
     },

@@ -44,6 +44,14 @@
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha2\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rowlayout2.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\layout\\rowlayout2.xml"
+    },
+    {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dodaj_racun.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\layout\\activity_dodaj_racun.xml"
+    },
+    {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_list_restavracij.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\layout\\content_list_restavracij.xml"
     },
