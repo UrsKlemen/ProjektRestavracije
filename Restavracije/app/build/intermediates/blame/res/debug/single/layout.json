@@ -16,6 +16,10 @@
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha2\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_service.xml",
+        "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\src\\main\\res\\layout\\activity_service.xml"
+    },
+    {
         "merged": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "D:\\FERI\\ProjektRestavracije\\Restavracije\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha2\\res\\layout\\abc_action_bar_title_item.xml"
     },

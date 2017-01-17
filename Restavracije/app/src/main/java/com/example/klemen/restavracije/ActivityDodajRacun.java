@@ -17,6 +17,7 @@ package com.example.klemen.restavracije;
         import android.webkit.WebViewClient;
         import android.widget.Button;
         import android.widget.ImageView;
+        import android.widget.ProgressBar;
         import android.widget.RatingBar;
         import android.widget.TextView;
 
@@ -28,6 +29,8 @@ public class ActivityDodajRacun extends AppCompatActivity implements View.OnClic
     public TextView t1, t2, t3, t4, t5, t6;
     public ImageView imv, imv1,imv2;
     Restavracija r;
+    public ProgressBar pb;
+    ApplicationMy rest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +43,10 @@ public class ActivityDodajRacun extends AppCompatActivity implements View.OnClic
         t3 = (TextView) findViewById(R.id.textView4);
         t4 = (TextView) findViewById(R.id.textView5);
         t5 = (TextView) findViewById(R.id.textView6);
-        t6 = (TextView) findViewById(R.id.textView7);
         TextView t2 = (TextView) findViewById(R.id.textView20);
         t2.setClickable(true);
         t2.setMovementMethod(LinkMovementMethod.getInstance());
+        pb = (ProgressBar)findViewById(R.id.progressBar3);
 
         Button scan = (Button)findViewById(R.id.button3);
         scan.setOnClickListener(this);
@@ -55,7 +58,8 @@ public class ActivityDodajRacun extends AppCompatActivity implements View.OnClic
         webSettings.setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient());
 
-        MyClass res = MyClass.getScenarij();
+        rest = (ApplicationMy)getApplication();
+        MyClass res = rest.getAll();
         r = res.getRestavracija(message);
         setTitle(r.getIme());
         t1.setText(r.getIme());
@@ -64,6 +68,7 @@ public class ActivityDodajRacun extends AppCompatActivity implements View.OnClic
         webview.loadUrl("https://www.google.si/maps/place/"+ r.getNaslov().getUlica() + " " + r.getNaslov().getHisna_stev() + ", " + r.getNaslov().getMesto());
         t3.setText(r.getNaslov().getUlica() + ", " + r.getNaslov().getHisna_stev());
         t4.setText(r.getNaslov().getPostna_stev() + " " + r.getNaslov().getPosta());
+        pb.setProgress(r.getStevec());
         if(r.getGlukoza() && r.getLaktoza())
         {
             imv2.setImageResource(R.drawable.glutenfree);
@@ -86,8 +91,9 @@ public class ActivityDodajRacun extends AppCompatActivity implements View.OnClic
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
-            String scanContent = scanningResult.getFormatName();
-            t6.setText("CONTENT: " + scanContent);
+            r.setStevec();
+            rest.save();
+            pb.setProgress(r.getStevec());
         }
     }
 }

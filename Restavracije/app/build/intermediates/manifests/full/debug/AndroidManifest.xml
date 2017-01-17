@@ -48,6 +48,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.klemen.restavracije.ActivityDodajRacun" />
+        <activity android:name="com.example.klemen.restavracije.ActivityService" />
     </application>
 
 </manifest>

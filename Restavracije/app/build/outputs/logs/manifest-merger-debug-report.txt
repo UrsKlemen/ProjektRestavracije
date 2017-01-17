@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:10:5-45:19
+ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:10:5-46:19
 MERGED from [com.android.support:design:24.0.0-alpha2] D:\FERI\ProjektRestavracije\Restavracije\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha2\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.0.0-alpha2] D:\FERI\ProjektRestavracije\Restavracije\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha2\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.0.0-alpha2] D:\FERI\ProjektRestavracije\Restavracije\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha2\AndroidManifest.xml:22:5-20
@@ -57,7 +57,7 @@ ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:18:13-41
 activity#com.example.klemen.restavracije.ListRestavracij
-ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:21:9-24:68
+ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:21:9-24:59
 	android:label
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:23:13-68
 	android:theme
@@ -103,9 +103,13 @@ ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.example.klemen.restavracije.ActivityDodajRacun
-ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:44:9-65
+ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:44:9-56
 	android:name
 		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:44:19-53
+activity#com.example.klemen.restavracije.ActivityService
+ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:45:9-62
+	android:name
+		ADDED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml:45:19-50
 uses-sdk
 INJECTED from D:\FERI\ProjektRestavracije\Restavracije\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0-alpha2] D:\FERI\ProjektRestavracije\Restavracije\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha2\AndroidManifest.xml:20:5-43

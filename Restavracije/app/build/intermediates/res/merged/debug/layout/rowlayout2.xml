@@ -77,7 +77,6 @@
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/progressBar4"
                 android:visibility="visible"
@@ -87,9 +86,9 @@
                 android:progressTint="@color/red"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/ocena"
-                android:layout_toStartOf="@+id/ocena"
                 android:layout_marginRight="18dp"
-                android:layout_marginEnd="18dp" />
+                android:layout_marginEnd="18dp"
+                android:layout_width="130dp" />
 
         </RelativeLayout>
 

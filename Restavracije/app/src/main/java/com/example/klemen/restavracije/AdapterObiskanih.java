@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,6 +41,7 @@ public class AdapterObiskanih extends RecyclerView.Adapter<AdapterObiskanih.View
         public TextView txtFooter;
         public LinearLayout linearl;
         public ImageView imv1, imv2, ocena;
+        public ProgressBar pb;
 
         public ViewHolder(View v) {
             super(v);
@@ -49,6 +51,7 @@ public class AdapterObiskanih extends RecyclerView.Adapter<AdapterObiskanih.View
             imv1 = (ImageView) v.findViewById(R.id.imv1);
             imv2 = (ImageView) v.findViewById(R.id.imv2);
             ocena = (ImageView) v.findViewById(R.id.ocena);
+            pb =(ProgressBar)v.findViewById(R.id.progressBar4);
         }
     }
 
@@ -94,6 +97,7 @@ public class AdapterObiskanih extends RecyclerView.Adapter<AdapterObiskanih.View
                 break;
         }
         holder.txtFooter.setText(trenutni.getNaslov().toString());
+        holder.pb.setProgress(trenutni.getStevec());
         if(trenutni.getGlukoza() && trenutni.getLaktoza())
         {
             holder.imv2.setImageResource(R.drawable.glutenfree);

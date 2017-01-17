@@ -32,7 +32,7 @@ public class AdapterRestavracij extends RecyclerView.Adapter<AdapterRestavracij.
     public static final String PARAMETER_POSITION_1 = "POSITION_RESTAVRACIJ";
     private MyClass mDataset;
     Activity ac;
-    //Obiskane obiskane;
+    ApplicationMy rest;
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         // each data item is just a string in this case
@@ -118,8 +118,17 @@ public class AdapterRestavracij extends RecyclerView.Adapter<AdapterRestavracij.
                 builder.setMessage("Želite restavracijo dodati med obiskane restavracije?");
                 builder.setPositiveButton("Da", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        /*obiskane.dodaj(trenutni);
-                        obiskane.save();*/
+                        rest = (ApplicationMy) ac.getApplication();
+                        boolean dodaj = true;
+                        MyClass vmesna = rest.getAll();
+                        for(int i=0;i<rest.size();i++) {
+                            if(vmesna.getRestavracija(i).getIme().equals(trenutni.getIme()))
+                                dodaj = false;
+                        }
+                        if(dodaj) {
+                            rest.dodaj(new Restavracija(rest.size(), trenutni.getIme(), trenutni.getNaslov(), trenutni.getOcena_restavracije(), trenutni.getLaktoza(), trenutni.getGlukoza(), trenutni.getTelefonska(), trenutni.getSpletna(), 0));
+                            rest.save();
+                        }
                         Toast toast = Toast.makeText(ac, "Restavracija je bila dodana med obiskane.",
                                 Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER| Gravity.CENTER, 0, 0);

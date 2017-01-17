@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.0.0-alpha2'
     compile 'com.google.code.gson:gson:2.2.4'
     compile files('libs/wekaSTRIPPED.jar')
+    compile files('libs/ksoap2-android-assembly-3.6.1-jar-with-dependencies.jar')
 }

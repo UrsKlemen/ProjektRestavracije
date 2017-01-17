@@ -28,12 +28,13 @@ public class ApplicationMy extends Application {
     public void onCreate() {
         super.onCreate();
         if (!load()) {
-            all = MyClass.getScenarij();
+            all = new MyClass();
             save();
         }
+        else
+            load();
     }
     public MyClass getAll() {
-        all.sort();
         return all;
     }
 

@@ -21,7 +21,7 @@
         <activity
             android:name=".ListRestavracij"
             android:label="@string/title_activity_list_restavracij"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ActivityRestavracije"
             android:label="@string/title_activity_activity_restavracije"
@@ -41,7 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityDodajRacun"></activity>
+        <activity android:name=".ActivityDodajRacun" />
+        <activity android:name=".ActivityService"></activity>
     </application>
 
 </manifest>

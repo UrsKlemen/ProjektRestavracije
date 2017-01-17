@@ -11,14 +11,20 @@ public class Restavracija {
     public Naslov naslov;
     public Integer ocena_restavracije;
     public Boolean laktoza, glukoza;
+    public String telefonska;
+    public String spletna;
+    public Integer stevec;
 
-    public Restavracija(Integer id, String ime, Naslov naslov, Integer ocena_restavracije, Boolean laktoza, Boolean glukoza) {
+    public Restavracija(Integer id, String ime, Naslov naslov, Integer ocena_restavracije, Boolean laktoza, Boolean glukoza, String telefonska, String spletna, Integer stevec) {
         this.id = id;
         this.ime = ime;
         this.naslov = naslov;
         this.ocena_restavracije = ocena_restavracije;
         this.laktoza = laktoza;
         this.glukoza = glukoza;
+        this.telefonska = telefonska;
+        this.spletna = spletna;
+        this.stevec = stevec;
     }
 
     @Override
@@ -41,6 +47,15 @@ public class Restavracija {
     public void setOcena_restavracije(Integer ocena_restavracije) {
         this.ocena_restavracije = ocena_restavracije;
     }
+    public void setStevec()
+    {
+        this.stevec++;
+    }
+    public Integer getStevec()
+    {
+        return stevec;
+    }
+
     public Integer getId()
     {return id;}
 
@@ -62,6 +77,14 @@ public class Restavracija {
     }
     public Boolean getGlukoza(){
         return  glukoza;
+    }
+
+    public String getTelefonska() {
+        return telefonska;
+    }
+
+    public String getSpletna() {
+        return spletna;
     }
 
     public static Comparator<Restavracija> StuNameComparator = new Comparator<Restavracija>() {
